@@ -1,0 +1,2 @@
+function bubbleSort(data : number[]){
+}

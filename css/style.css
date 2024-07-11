@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", Courier, monospace;
+  box-sizing: border-box;
+  height: 100dvh;
+  overflow: hidden;
+  user-select: none;
+}
+
+.warp {
+  width: 100dvw;
+  height: 100dvh;
+  background-color: #1f1f1f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 10rem;
+}
+.app-name {
+  font-size: clamp(28px, 4vw, 36px);
+  line-height: 6rem;
+  font-weight: 700;
+  color: #ffff;
+  text-align: center;
+  height: fit-content;
+}
+.type-setting {
+  height: 5rem;
+  width: 100%;
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.type-setting button {
+  width: 5rem;
+  height: 3rem;
+  border: none;
+  font-size: clamp(14px, 2vw, 18px);
+}
+.canvas {
+  width: 100%;
+  border: 2px solid #ffff;
+  border-radius: 0.7rem;
+  display: flex;
+  justify-content: end;
+  position: relative;
+}
+.start-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 0.2rem solid #ffff;
+  border-radius: 50rem;
+  background-color: transparent;
+  height: 5rem;
+  width: 12rem;
+  font-size: clamp(14px, 2vw, 24px);
+  font-weight: 500;
+  color: #ffff;
+}
+
+@media screen and (max-width: 1440px) {
+  .warp {
+    padding: 1rem 5rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .warp {
+    padding: 0 2rem;
+  }
+  .type-setting {
+    gap: 1rem;
+  }
+}
+@media screen and (max-width: 786px) {
+  .warp {
+    padding: 0;
+  }
+}
